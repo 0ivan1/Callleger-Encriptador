@@ -1,0 +1,375 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+.body {
+    width: 100%;
+    min-height: 100vh;
+    font-family: 'Grenze Gotisch', cursive;
+    background-image: url("/Imagenes/601846.jpg");
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+header{
+    display: flex;
+    background-color: aliceblue;
+    justify-content: center;
+    position: relative;
+
+}
+
+h1{
+    text-align: center;
+    font-size: 80px;
+    background-color: aliceblue;
+
+}
+
+.contenedor-logo{
+    display: flex;
+    height: 92px;
+    align-items: center;
+    position: absolute;
+    left: 30px;
+}
+
+
+.main {
+    display: flex;
+}
+
+.seccion1 {
+    width: 864px;
+    height: 100%;
+    left: 497px;
+    display: block;
+    margin: 0 auto;
+    color: aqua;
+}
+
+textarea{
+    color: aqua;
+}
+
+.area {
+    position: relative;
+    width: 600px;
+    height: 301px;
+    left: 7px;
+    top: 80px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    resize: none;
+    border-color: rgb(237, 241, 241);
+    background-color:transparent;
+    border-radius: 20px;
+    border: 10px solid cornsilk;
+}
+
+.area{
+    color: azure;
+}
+
+
+.btn-encriptar {
+    margin-right: 7px;
+    background: rgb(85, 161, 9);
+    width: 60%;
+    height: 50px;
+    border-radius: 50px;
+    /* permite que los botones ocupen todo el espacio disponible */
+    /* Efecto RGB en los bordes al interactuar con el botón */
+    border: 2px solid #000000;
+    transition: all 0.2s ease-in-out;
+    /* Efecto de ampliación al presionar el botón */
+    transform: scale(1);
+    cursor: pointer;
+    border: solid 5px transparent;
+    /*Aqui se define el grosor del borde */
+    animation: border-animation 5s linear infinite;
+    /*Aqui se define la animacion con una duracion de 5s y una transicion linear, y se repite infinitamente*/
+}
+
+.btn-encriptar:hover {
+    border-radius: 25px;
+    transform: scale(1.1);
+}
+
+.btn-desencriptar {
+    margin-left: 10px;
+    /* White */
+    background-color: #911515;
+    width: 60%;
+    height: 50px;
+    border-radius: 50px;
+    /* permite que los botones ocupen todo el espacio disponible */
+    /* Efecto RGB en los bordes al interactuar con el botón */
+    border: 2px solid #000000;
+    transition: all 0.2s ease-in-out;
+    /* Efecto de ampliación al presionar el botón */
+    transform: scale(1);
+    cursor: pointer;
+    border: solid 5px transparent;
+    /*Aqui se define el grosor del borde */
+    animation: border-animation 5s linear infinite;
+    /*Aqui se define la animacion con una duracion de 5s y una transicion linear, y se repite infinitamente*/
+}
+
+.btn-desencriptar:hover {
+    transition: all 0.2s;
+    border-radius: 25px;
+    transform: scale(1.1);
+}
+
+.contenedor-de-botones {
+    display: inline-block;
+    font-size: 1.5em;
+    position: relative;
+    width: 662px;
+    left: 15px;
+    top: 180px;
+}
+
+.vector, .minuscula{
+    display: inline-block;
+}
+
+.indicaciones {
+    display: flex;
+    position: absolute;
+    left: 17%;
+    top: 75%;
+    font-size: 15px;
+}
+
+.contenedor-de-botones p {
+    padding-left: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.botones {
+    display: flex;
+    margin: 0 auto;
+}
+
+.seccion2 {
+    width: 432px;
+    height: 100%;
+    width: 21%;
+    display: inline-block;
+    box-sizing: border-box;
+    overflow: hidden;
+    font-size: 13px;
+    position: relative;
+    height: 569px;
+    top: 34px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    margin: 5px;
+    border: 10px solid rgb(241, 238, 238);
+    border-radius: 8px;
+    animation: border-animation 5s linear infinite;
+    margin-right:  5%;
+}
+
+.imagen-munheco {
+    display: block;
+    width: 100%;
+    height: auto;
+    max-width: 200px;
+    max-height: 250px;
+    overflow: hidden;
+    position: relative;
+    top: 94px;
+    margin: auto auto;
+}
+
+.contenedor-de-munheco {
+    width: 100%;
+    height: 85%;
+    padding: 50px;
+    box-sizing: border-box;
+}
+
+.contenedor-de-h3 {
+    display: inline;
+}
+
+.contenedor-de-parrafo {
+    display: inline;
+    width: 100%;
+    height: 20%;
+    margin-top: 100px;
+    text-align: center;
+}
+
+.texto-principal {
+    margin-left: 5;
+    text-align: center;
+    font-size: 13px;
+    color: rgb(250, 245, 245);
+}
+
+.contenedor-de-resultado {
+    width: 100%;
+    height: 70%;
+    padding: 50px;
+    box-sizing: border-box;
+}
+
+.contenedor-copiar {
+    display: flex;
+    justify-content: center;
+}
+
+.btn-copiar {
+    width: 50%;
+    height: 50px;
+    border-radius: 10px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    background-color: rgb(196, 226, 24);
+    color: black;
+    border: 2px solid #000000;
+    transition: all 0.2s ease-in-out;
+    transform: scale(1);
+    cursor: pointer;
+    border: solid 5px transparent;
+    /*Aqui se define el grosor del borde */
+    animation: border-animation 5s linear infinite;
+    /*Aqui se define la animacion con una duracion de 5s y una transicion linear, y se repite infinitamente*/
+}
+
+
+.btn-copiar:hover {
+    border-radius: 25px;
+    transform: scale(1.1);
+}
+
+
+
+.contenedor-refreshButton {
+    display: flex;
+    margin: 0 auto;
+  }
+  
+.ocultar {
+    display: none;
+
+}
+
+.texto-resultado {
+    width: 100%;
+    height: 310px;
+    resize: none;
+    border-style: none;
+    outline: 0px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 40;
+    font-size: 24px;
+    line-height: 150%;
+    background-color: transparent;
+}
+
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.copyright{
+    text-align: center;
+    font-size: 20px;
+    padding: 30px;
+    color: aquamarine
+}
+
+.contenedor-iconos{
+    display: flex;
+    gap: 20px;
+    font-size: 30px;
+}
+
+.contenedor-iconos a i{
+    color: #f8f7f7;
+    transition: transform 0.3s ease ;
+}
+
+.contenedor-iconos a i:hover{
+    transform: scale(1.1);
+}
+
+@media screen and (max-width:480px){
+    .contenedor-logo{
+        left: -30px;
+    }
+    h1{
+        font-size: 60px;
+    }
+    .area{
+        width: auto;
+        position: static;
+    }
+    .contenedor-de-botones{
+        position: static;
+        width: auto;
+    }
+
+    .copyright{
+        padding: 0px;
+    }
+
+    .contenedor-de-munheco{
+        display: none;
+
+    }
+
+    .main{
+        flex-direction: column;
+        flex: 1 1 auto;
+        gap: 30px;
+    }
+
+    .seccion2{
+        width: auto;
+        height: auto;
+        position: static;
+        flex: 1 1 auto;
+    }
+
+    .texto-resultado{
+        height: auto;
+    }
+
+    .seccion1{
+        width: auto;
+        height: auto;
+        flex: 1 1 auto;
+        display: flex;
+        flex-direction: column;
+        padding-top: 40px;
+    }
+
+    #content{
+        flex: 1 1 auto;
+    };
+
+    .vector{
+        position: unset;
+    }
+
+}
