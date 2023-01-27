@@ -8,7 +8,7 @@
     width: 100%;
     min-height: 100vh;
     font-family: 'Grenze Gotisch', cursive;
-    background-image: url("/Imagenes/601846.jpg");
+    background-image: url("601846.jpg");
     background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
